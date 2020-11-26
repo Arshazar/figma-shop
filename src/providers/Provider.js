@@ -13,16 +13,6 @@ const CartContextProvider = (props) => {
                     return product
                 }
             })
-            // let newCart = cart.filter((product) => {
-            //     if (p.id === product.id) {
-            //         return {
-            //             ...product,
-            //             entity: product.entity ? product.entity + 1 : 1
-            //         }
-            //     }
-            // })
-            // newCart = newCart.length > 0 ? newCart : [p]
-            // setCart([...exceptionCart, ...newCart])
             let newAddedtoPrev = cart.filter((el) => {
                 if (p.id === el.id) {
                     let newEl = el
