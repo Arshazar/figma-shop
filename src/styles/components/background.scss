@@ -1,0 +1,16 @@
+.background-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 0;
+
+  .bluerect {
+    display: block;
+    position: relative;
+    min-width: 55%;
+    height: 100%;
+  }
+}

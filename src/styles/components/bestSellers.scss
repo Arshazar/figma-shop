@@ -1,0 +1,178 @@
+@import "../constants";
+
+.bestsellers-wrapper {
+  position: relative;
+  width: 50%;
+  min-height: 60vh;
+  height: auto;
+  padding: 10px 30px 20px 89px;
+  margin: 0;
+  margin-top: -30px;
+
+  @media (max-width: $md) {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 90px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .bestsellers-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 30px;
+
+    &-title {
+      font-size: 3.1em;
+      font-weight: 900;
+
+      @media (max-width: $md) {
+        font-size: 2.6em;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 2.3em;
+      }
+    }
+
+    .circle {
+      position: relative;
+      width: 49px;
+      height: 49px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 10px 10px $colour-3;
+      .rectangle {
+        position: relative;
+        width: 24px;
+        height: 6px;
+        left: 12.5px;
+        top: 21.5px;
+        background: $colour-3;
+        border-radius: 3px;
+      }
+    }
+  }
+  .bestsellers-items {
+    display: flex;
+    flex-flow: row wrap;
+
+    .item-container {
+      position: relative;
+      border-radius: 35px;
+      background: white;
+      width: 30%;
+      margin: 0 20px;
+      -webkit-transition: .3s ease;
+      -moz-transition: .3s ease;
+      -o-transition: .3s ease;
+      -ms-transition: .3s ease;
+      transition: .3s ease;
+
+      @media (max-width: $lg) {
+        width: 40%;
+        margin: 0 5px;
+      }
+
+      @media (max-width: md) {
+        width: 60%;
+        margin: 0 5px;
+      }
+
+      @media (max-width: $sm) {
+        width: 100%;
+        margin-bottom: 230px;
+      }
+
+      .item-image-wrapper {
+        img {
+          border-radius: 35px;
+          border-bottom: none;
+        }
+      }
+      .item-desc-wrapper {
+        color: white;
+        position: relative;
+        top: -32px;
+        bottom: 0;
+        border-radius: 35px;
+        background: $bg-1;
+        height: 50%;
+        padding: 20px;
+        .item-desc-header {
+          position: relative;
+          margin-bottom: 20px;
+          margin-top: 10px;
+          &-header {
+            font-size: 2.3em;
+            font-weight: bold;
+
+            @media (max-width: $lg) {
+              font-size: 1.8em;
+            }
+          }
+          &-detail {
+            font-size: .875em;
+            @media (max-width: $md) {
+              font-size: 1em;
+            }
+          }
+        }
+        .item-desc-description {
+          font-size: .625em;
+          @media (max-width: $md) {
+            font-size: .8em;
+          }
+        }
+        .item-desc-footer {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: -70px;
+          &-price {
+
+          }
+          &-add {
+            button {
+              width: 30px;
+              height: 30px;
+              margin-top: -20px;
+              outline: none;
+              border: 0 solid $colour-6;
+              border-radius: 50%;
+              background: $colour-6;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-size: 1.2em;
+              font-weight: lighter;
+              cursor: pointer;
+
+              p {
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        @media (min-width: $md) {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+
+.cloned {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 60px;
+}
