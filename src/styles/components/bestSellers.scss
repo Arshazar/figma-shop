@@ -163,6 +163,7 @@
       &:hover {
         @media (min-width: $md) {
           transform: scale(1.2);
+          z-index: 5;
         }
       }
     }
